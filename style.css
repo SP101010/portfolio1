@@ -1,0 +1,497 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    html, body{
+    width: 100%;
+    height: 100%;
+    }
+    ::-webkit-scrollbar{
+    width: 8px;
+    height: 0;
+    }
+    ::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+    }
+    #container{
+    width: 99.4vw;
+    height: 100%;
+    }
+    #main, #about, #projects, #contact{
+    width: 100%;
+    height: 100vh;
+    }
+    #back{
+    width: 99.85%;
+    height: 99.7%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    #back h1{
+    font-size: 150px;
+    transform: skewX(15deg);
+    font-family: 'Impact', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 20px;
+    animation-name: slide;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-direction: normal;
+    }
+    @keyframes slide{
+    from{
+    position: relative;
+    left: 80%;
+    }
+    to{
+    position: relative;
+    left: 0;
+    }
+    }
+    #back h1 span{
+    font-size: 200px;
+    }
+    #front{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    }
+    nav{
+    width: 95%;
+    height: 80px;
+    background-color: bisque;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    #logo{
+    padding: 0 30px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    }
+    #logo div{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #000000;
+    background-image: url(https://i.postimg.cc/CK38RN5x/Sayan-Dind-A.png);
+    background-position: center;
+    background-size: cover;
+    }
+    #list{
+    padding: 0 30px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+    #list p{
+    margin: 0 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    }
+    #list p a{
+    text-decoration: none;
+    }
+    #front img{
+    width: 500px;
+    height: 500px;
+    }
+    #front #p{
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family:'Impact', Tahoma, Geneva, Verdana, sans-serif
+    }
+    #about{
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    }
+    #about h1{
+    font-size: 80px;
+    font-family: 'Impact', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 10px;
+    }
+    #about h1 span{
+    font-size: 100px;
+    }
+    #about-text{
+    margin: 0 30px;
+    }
+    #about-text p{
+    font-size: 18px;
+    font-family: sans-serif;
+    }
+    #skills{
+    margin: 30px 0;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    }
+    .tab{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    transition: 2s;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    }
+    #one{
+    background-image: url(https://i.postimg.cc/gcLRS0R3/html.png);
+    animation-name: glideone;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    }
+    @keyframes glideone{
+    from{
+    position: relative;
+    top: -80px;
+    }
+    to{
+    position: relative;
+    top: 80px;
+    }
+    }
+    #two{
+    background-image: url(https://i.postimg.cc/CxhRgMZP/css.png);
+    animation-name: glidetwo;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 0.8s;
+    animation-direction: alternate-reverse;
+    }
+    @keyframes glidetwo{
+    from{
+    position: relative;
+    top: -80px;
+    }
+    to{
+    position: relative;
+    top: 80px;
+    }
+    }
+    #three{
+    background-image: url(https://i.postimg.cc/zvQx127p/js.png);
+    animation-name: glidethree;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 1.6s;
+    animation-direction: alternate-reverse;
+    }
+    @keyframes glidethree{
+    from{
+    position: relative;
+    top: -80px;
+    }
+    to{
+    position: relative;
+    top: 80px;
+    }
+    }
+    #four{
+    background-image: url(https://i.postimg.cc/XJ7LB6DQ/react.png);
+    animation-name: glidefour;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 2.4s;
+    animation-direction: alternate-reverse;
+    }
+    @keyframes glidefour{
+    from{
+    position: relative;
+    top: -80px;
+    }
+    to{
+    position: relative;
+    top: 80px;
+    }
+    }
+    #five{
+    background-image: url(https://i.postimg.cc/MZ4RMW4x/ui.png);
+    animation-name: glidefive;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 3.2s;
+    animation-direction: alternate-reverse;
+    }
+    @keyframes glidefive{
+    from{
+    position: relative;
+    top: -80px;
+    }
+    to{
+    position: relative;
+    top: 80px;
+    }
+    }
+    #projects{
+    padding: 20px 100px;
+    }
+    #projects h1{
+    font-size: 80px;
+    font-family: 'Impact', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 10px;
+    }
+    #projects h1 span{
+    font-size: 100px;
+    }
+    #projects>p{
+    margin-top: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    }
+    #projects p a{
+    text-decoration: none;
+    }
+    #project{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    }
+    .project-tab{
+    width: 350px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    }
+    .project-text{
+    padding: 10px;
+    width: 100%;
+    height: 45%;
+    background-color: bisque;
+    border-radius: 20px;
+    box-shadow: 0 -2px 5px #000000;
+    line-height: 30px;
+    }
+    .project-text h2{
+    font-size: 25px;
+    font-family: sans-serif;
+    }
+    .project-text p span{
+    padding: 3px 10px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    background-color: gray;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    }
+    .project-text .links{
+    margin: 5px 0;
+    }
+    .project-text .links span{
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    font-size: 16px;
+    color: white;
+    }
+    .project-text .links a{
+    text-decoration: none;
+    }
+    #contact{
+    padding: 20px 100px;
+    }
+    #contact h1{
+    font-size: 80px;
+    font-family: 'Impact', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 10px;
+    }
+    #contact h1 span{
+    font-size: 100px;
+    }
+    .name, .mail, .message, .clicked{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    }
+    .box{
+    position: relative;
+    width: 25em;
+    }
+    .box input{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid orange;
+    outline: none;
+    font-size: 1em;
+    transition: 0.5s;
+    }
+    .box span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    transition: 0.5s;
+    }
+    .box input:valid ~ span,
+    .box input:focus ~ span{
+    color: blue;
+    transform: translateX(10px) translateY(-5px);
+    font-size: 0.65rem;
+    padding: 0 10px;
+    background-color: white;
+    letter-spacing: 3px;
+    }
+    .message{
+    margin-top: 30px;
+    }
+    .message>.box input{
+    height: 60px;
+    } 
+    .clicked button{
+    padding: 5px 10px;
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 5px;
+    }
+    .clicked button:hover{
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    }
+    #social-media{
+    padding: 5px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .app{
+    margin: 0 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition:3s;
+    }
+    .app:hover{
+    transform: rotateZ(360deg);
+    }
+    @media only screen and (max-width: 500px){
+    #container{
+    width: 100vw;
+    }
+    #back h1{
+    font-size: 50px;
+    letter-spacing: 0;
+    }
+    #back h1 span{
+    font-size: 60px;
+    }
+    #logo{
+    padding: 0 10px;
+    }
+    #logo>div{
+    width: 50px;
+    height: 50px;
+    }
+    #list{
+    padding: 0 10px;
+    gap: 15px;
+    }
+    #list p{
+    margin: 0;
+    font-size: 15px;
+    font-family: sans-serif;
+    }
+    #list p a{
+    text-decoration: none;
+    }
+    #front img{
+    width: 350px;
+    height: 370px;
+    }
+    #front #p{
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family:'Impact', Tahoma, Geneva, Verdana, sans-serif
+    }
+    .social{
+    width: 50px;
+    height: 50px;
+    }
+    #about, #projects, #contact{
+    padding: 10px 30px;
+    }
+    #about h1, #projects h1, #contact h1{
+    font-size: 50px;
+    letter-spacing: 3px;
+    }
+    #about h1 span, 
+    #projects h1 span, 
+    #contact h1 span{
+    font-size: 80px;
+    }
+    #about-text{
+    margin: 0 5px;
+    }
+    #about-text p{
+    font-size: 15px;
+    }
+    #skills{
+    gap: 10px;
+    }
+    .tab{
+    width: 60px;
+    height: 60px;
+    }
+    #projects{
+    height: 200vh;
+    }
+    #project{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    }
+    }
+    
